@@ -1,0 +1,45 @@
+﻿
+@using Microsoft.JSInterop
+@inherits ComponentBase
+@inject IJSRuntime JS
+
+<div @ref="divElement" style="@Style" @onkeyup="TriggerDotNetInstanceMethod" @onpaste="TriggerDotNetInstanceMethod">@Value</div>
+
+
+@code {
+    [Parameter]
+    public string Value { get; set; }
+
+    [Parameter]
+    public EventCallback<string> ValueChanged { get; set; }
+    [Parameter] public Languages language { get; set; } = Languages.text;
+    [Parameter] public bool DarkMode { get; set; } = false;
+    [Parameter] public string Style { get; set; }
+    private ElementReference divElement;
+    private DotNetObjectReference<AceJsEditor> objRef = default!;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("loadScript", "_content/Blazor.AceEditorJs/ace/ace.js");
+            await JS.InvokeVoidAsync("loadScript", "_content/Blazor.AceEditorJs/ace/ext-themelist.js");
+            await JS.InvokeVoidAsync("loadScript", "_content/Blazor.AceEditorJs/ace/ext-language_tools.js");
+            await JS.InvokeVoidAsync("loadScript", "_content/Blazor.AceEditorJs/ace/ace-custom.js");
+            await JS.InvokeVoidAsync("editorRender", divElement, language.ToString(), DarkMode == false ? "sqlserver" : "one_dark");
+        }
+    }
+
+    public async Task TriggerDotNetInstanceMethod()
+    {
+        objRef = DotNetObjectReference.Create(this);
+        await JS.InvokeVoidAsync("GetCode", objRef, divElement);
+    }
+
+    [JSInvokable]
+    public async Task ReceiveCode(string feedback)
+    {
+        Value = feedback;
+        await ValueChanged.InvokeAsync(Value);
+    }
+}

@@ -1,0 +1,9 @@
+﻿@page "/EditorDemo"
+
+<PageTitle>EditorDemo</PageTitle>
+<AceJsEditor language="Languages.sql" Style="height:300px" @bind-Value ="@textToEdit" DarkMode="true"></AceJsEditor>
+<p>@textToEdit</p>
+
+@code {
+    string textToEdit = "Select * from Test";
+}

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.AceEditorJs", "Blazor.AceJS\Blazor.AceEditorJs.csproj", "{9480A623-46BE-488B-95EC-F912AAA97A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.AceEditorJsDemo", "Blazor.AceEditorJsDemo\Blazor.AceEditorJsDemo.csproj", "{2D4630C9-6465-4C36-BBFB-CDF9D3A7D21A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9480A623-46BE-488B-95EC-F912AAA97A3E} = {9480A623-46BE-488B-95EC-F912AAA97A3E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9480A623-46BE-488B-95EC-F912AAA97A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9480A623-46BE-488B-95EC-F912AAA97A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9480A623-46BE-488B-95EC-F912AAA97A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9480A623-46BE-488B-95EC-F912AAA97A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4630C9-6465-4C36-BBFB-CDF9D3A7D21A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4630C9-6465-4C36-BBFB-CDF9D3A7D21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4630C9-6465-4C36-BBFB-CDF9D3A7D21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4630C9-6465-4C36-BBFB-CDF9D3A7D21A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11D9F461-0F68-4373-B850-40884CE9EAEF}
+	EndGlobalSection
+EndGlobal
