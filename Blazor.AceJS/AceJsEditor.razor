@@ -22,10 +22,10 @@
     {
         if (firstRender)
         {
-            await JS.InvokeVoidAsync("loadScript", "_content/Blazor.AceEditorJs/ace/ace.js");
-            await JS.InvokeVoidAsync("loadScript", "_content/Blazor.AceEditorJs/ace/ext-themelist.js");
-            await JS.InvokeVoidAsync("loadScript", "_content/Blazor.AceEditorJs/ace/ext-language_tools.js");
-            await JS.InvokeVoidAsync("loadScript", "_content/Blazor.AceEditorJs/ace/ace-custom.js");
+            await JS.InvokeVoidAsync("BlazorAceEditor", "_content/Blazor.AceEditorJs/ace/ace.js");
+            await JS.InvokeVoidAsync("BlazorAceEditor", "_content/Blazor.AceEditorJs/ace/ext-themelist.js");
+            await JS.InvokeVoidAsync("BlazorAceEditor", "_content/Blazor.AceEditorJs/ace/ext-language_tools.js");
+            await JS.InvokeVoidAsync("BlazorAceEditor", "_content/Blazor.AceEditorJs/ace/ace-custom.js");
             await JS.InvokeVoidAsync("editorRender", divElement, language.ToString(), DarkMode == false ? "sqlserver" : "one_dark");
         }
     }
