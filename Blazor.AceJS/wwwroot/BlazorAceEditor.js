@@ -1,5 +1,5 @@
 ﻿// loadScript: returns a promise that completes when the script loads
-window.loadScript = function (scriptPath) {
+window.BlazorAceEditor = function (scriptPath) {
     // check list - if already loaded we can ignore
     if (loaded[scriptPath]) {
         console.log(scriptPath + " already loaded");
