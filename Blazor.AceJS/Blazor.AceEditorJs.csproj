@@ -7,7 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>AceEditorJs</Title>
-    <Version>1.0.22</Version>
+    <Version>1.0.24</Version>
     <PackageProjectUrl>https://github.com/bennnos/Blazor.AceJS</PackageProjectUrl>
     <RepositoryUrl>https://github.com/bennnos/Blazor.AceJS</RepositoryUrl>
   </PropertyGroup>
@@ -21,1305 +21,1305 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.8" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="wwwroot\ace\ace-custom.js">
+    <Content Update="wwwroot\ace\ace-custom.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ace.js">
+    </Content>
+    <Content Update="wwwroot\ace\ace.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-beautify.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-beautify.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-code_lens.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-code_lens.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-elastic_tabstops_lite.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-elastic_tabstops_lite.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-emmet.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-emmet.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-error_marker.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-error_marker.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-hardwrap.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-hardwrap.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-keybinding_menu.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-keybinding_menu.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-language_tools.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-language_tools.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-linking.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-linking.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-modelist.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-modelist.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-options.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-options.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-prompt.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-prompt.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-rtl.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-rtl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-searchbox.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-searchbox.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-settings_menu.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-settings_menu.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-spellcheck.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-spellcheck.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-split.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-split.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-static_highlight.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-static_highlight.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-statusbar.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-statusbar.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-textarea.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-textarea.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-themelist.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-themelist.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\ext-whitespace.js">
+    </Content>
+    <Content Update="wwwroot\ace\ext-whitespace.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\keybinding-emacs.js">
+    </Content>
+    <Content Update="wwwroot\ace\keybinding-emacs.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\keybinding-sublime.js">
+    </Content>
+    <Content Update="wwwroot\ace\keybinding-sublime.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\keybinding-vim.js">
+    </Content>
+    <Content Update="wwwroot\ace\keybinding-vim.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\keybinding-vscode.js">
+    </Content>
+    <Content Update="wwwroot\ace\keybinding-vscode.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-abap.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-abap.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-abc.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-abc.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-actionscript.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-actionscript.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-ada.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-ada.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-alda.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-alda.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-apache_conf.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-apache_conf.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-apex.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-apex.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-applescript.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-applescript.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-aql.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-aql.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-asciidoc.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-asciidoc.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-asl.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-asl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-assembly_x86.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-assembly_x86.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-autohotkey.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-autohotkey.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-batchfile.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-batchfile.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-c9search.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-c9search.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-cirru.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-cirru.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-clojure.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-clojure.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-cobol.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-cobol.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-coffee.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-coffee.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-coldfusion.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-coldfusion.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-crystal.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-crystal.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-csharp.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-csharp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-csound_document.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-csound_document.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-csound_orchestra.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-csound_orchestra.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-csound_score.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-csound_score.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-csp.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-csp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-css.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-css.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-curly.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-curly.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-c_cpp.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-c_cpp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-d.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-d.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-dart.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-dart.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-diff.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-diff.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-django.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-django.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-dockerfile.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-dockerfile.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-dot.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-dot.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-drools.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-drools.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-edifact.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-edifact.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-eiffel.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-eiffel.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-ejs.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-ejs.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-elixir.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-elixir.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-elm.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-elm.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-erlang.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-erlang.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-forth.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-forth.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-fortran.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-fortran.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-fsharp.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-fsharp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-fsl.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-fsl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-ftl.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-ftl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-gcode.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-gcode.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-gherkin.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-gherkin.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-gitignore.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-gitignore.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-glsl.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-glsl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-gobstones.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-gobstones.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-golang.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-golang.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-graphqlschema.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-graphqlschema.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-groovy.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-groovy.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-haml.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-haml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-handlebars.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-handlebars.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-haskell.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-haskell.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-haskell_cabal.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-haskell_cabal.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-haxe.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-haxe.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-hjson.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-hjson.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-html.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-html.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-html_elixir.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-html_elixir.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-html_ruby.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-html_ruby.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-ini.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-ini.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-io.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-io.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-ion.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-ion.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-jack.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-jack.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-jade.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-jade.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-java.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-java.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-javascript.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-javascript.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-json.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-json.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-json5.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-json5.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-jsoniq.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-jsoniq.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-jsp.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-jsp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-jssm.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-jssm.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-jsx.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-jsx.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-julia.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-julia.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-kotlin.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-kotlin.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-latex.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-latex.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-latte.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-latte.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-less.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-less.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-liquid.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-liquid.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-lisp.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-lisp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-livescript.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-livescript.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-logiql.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-logiql.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-logtalk.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-logtalk.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-lsl.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-lsl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-lua.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-lua.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-luapage.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-luapage.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-lucene.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-lucene.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-makefile.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-makefile.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-markdown.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-markdown.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-mask.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-mask.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-matlab.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-matlab.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-maze.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-maze.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-mediawiki.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-mediawiki.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-mel.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-mel.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-mips.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-mips.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-mixal.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-mixal.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-mushcode.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-mushcode.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-mysql.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-mysql.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-nginx.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-nginx.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-nim.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-nim.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-nix.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-nix.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-nsis.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-nsis.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-nunjucks.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-nunjucks.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-objectivec.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-objectivec.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-ocaml.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-ocaml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-partiql.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-partiql.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-pascal.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-pascal.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-perl.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-perl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-pgsql.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-pgsql.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-php.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-php.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-php_laravel_blade.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-php_laravel_blade.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-pig.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-pig.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-plain_text.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-plain_text.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-powershell.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-powershell.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-praat.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-praat.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-prisma.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-prisma.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-prolog.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-prolog.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-properties.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-properties.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-protobuf.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-protobuf.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-puppet.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-puppet.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-python.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-python.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-qml.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-qml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-r.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-r.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-raku.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-raku.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-razor.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-razor.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-rdoc.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-rdoc.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-red.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-red.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-redshift.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-redshift.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-rhtml.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-rhtml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-rst.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-rst.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-ruby.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-ruby.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-rust.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-rust.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-sac.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-sac.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-sass.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-sass.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-scad.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-scad.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-scala.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-scala.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-scheme.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-scheme.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-scrypt.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-scrypt.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-scss.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-scss.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-sh.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-sh.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-sjs.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-sjs.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-slim.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-slim.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-smarty.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-smarty.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-smithy.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-smithy.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-snippets.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-snippets.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-soy_template.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-soy_template.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-space.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-space.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-sparql.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-sparql.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-sql.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-sql.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-sqlserver.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-sqlserver.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-stylus.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-stylus.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-svg.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-svg.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-swift.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-swift.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-tcl.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-tcl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-terraform.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-terraform.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-tex.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-tex.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-text.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-text.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-textile.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-textile.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-toml.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-toml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-tsx.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-tsx.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-turtle.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-turtle.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-twig.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-twig.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-typescript.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-typescript.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-vala.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-vala.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-vbscript.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-vbscript.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-velocity.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-velocity.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-verilog.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-verilog.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-vhdl.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-vhdl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-visualforce.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-visualforce.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-wollok.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-wollok.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-xml.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-xml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-xquery.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-xquery.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-yaml.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-yaml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\mode-zeek.js">
+    </Content>
+    <Content Update="wwwroot\ace\mode-zeek.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\abap.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\abap.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\abc.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\abc.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\actionscript.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\actionscript.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\ada.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\ada.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\alda.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\alda.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\apache_conf.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\apache_conf.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\apex.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\apex.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\applescript.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\applescript.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\aql.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\aql.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\asciidoc.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\asciidoc.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\asl.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\asl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\assembly_x86.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\assembly_x86.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\autohotkey.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\autohotkey.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\batchfile.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\batchfile.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\c9search.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\c9search.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\cirru.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\cirru.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\clojure.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\clojure.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\cobol.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\cobol.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\coffee.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\coffee.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\coldfusion.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\coldfusion.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\crystal.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\crystal.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\csharp.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\csharp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\csound_document.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\csound_document.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\csound_orchestra.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\csound_orchestra.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\csound_score.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\csound_score.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\csp.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\csp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\css.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\css.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\curly.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\curly.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\c_cpp.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\c_cpp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\d.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\d.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\dart.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\dart.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\diff.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\diff.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\django.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\django.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\dockerfile.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\dockerfile.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\dot.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\dot.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\drools.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\drools.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\edifact.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\edifact.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\eiffel.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\eiffel.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\ejs.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\ejs.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\elixir.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\elixir.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\elm.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\elm.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\erlang.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\erlang.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\forth.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\forth.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\fortran.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\fortran.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\fsharp.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\fsharp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\fsl.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\fsl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\ftl.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\ftl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\gcode.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\gcode.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\gherkin.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\gherkin.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\gitignore.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\gitignore.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\glsl.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\glsl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\gobstones.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\gobstones.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\golang.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\golang.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\graphqlschema.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\graphqlschema.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\groovy.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\groovy.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\haml.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\haml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\handlebars.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\handlebars.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\haskell.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\haskell.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\haskell_cabal.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\haskell_cabal.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\haxe.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\haxe.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\hjson.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\hjson.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\html.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\html.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\html_elixir.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\html_elixir.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\html_ruby.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\html_ruby.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\ini.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\ini.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\io.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\io.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\ion.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\ion.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\jack.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\jack.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\jade.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\jade.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\java.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\java.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\javascript.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\javascript.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\json.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\json.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\json5.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\json5.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\jsoniq.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\jsoniq.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\jsp.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\jsp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\jssm.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\jssm.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\jsx.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\jsx.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\julia.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\julia.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\kotlin.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\kotlin.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\latex.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\latex.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\latte.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\latte.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\less.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\less.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\liquid.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\liquid.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\lisp.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\lisp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\livescript.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\livescript.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\logiql.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\logiql.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\logtalk.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\logtalk.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\lsl.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\lsl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\lua.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\lua.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\luapage.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\luapage.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\lucene.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\lucene.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\makefile.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\makefile.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\markdown.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\markdown.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\mask.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\mask.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\matlab.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\matlab.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\maze.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\maze.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\mediawiki.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\mediawiki.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\mel.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\mel.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\mips.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\mips.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\mixal.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\mixal.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\mushcode.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\mushcode.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\mysql.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\mysql.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\nginx.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\nginx.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\nim.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\nim.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\nix.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\nix.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\nsis.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\nsis.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\nunjucks.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\nunjucks.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\objectivec.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\objectivec.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\ocaml.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\ocaml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\partiql.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\partiql.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\pascal.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\pascal.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\perl.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\perl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\pgsql.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\pgsql.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\php.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\php.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\php_laravel_blade.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\php_laravel_blade.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\pig.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\pig.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\plain_text.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\plain_text.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\powershell.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\powershell.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\praat.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\praat.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\prisma.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\prisma.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\prolog.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\prolog.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\properties.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\properties.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\protobuf.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\protobuf.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\puppet.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\puppet.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\python.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\python.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\qml.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\qml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\r.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\r.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\raku.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\raku.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\razor.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\razor.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\rdoc.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\rdoc.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\red.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\red.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\redshift.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\redshift.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\rhtml.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\rhtml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\rst.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\rst.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\ruby.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\ruby.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\rust.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\rust.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\sac.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\sac.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\sass.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\sass.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\scad.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\scad.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\scala.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\scala.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\scheme.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\scheme.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\scrypt.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\scrypt.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\scss.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\scss.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\sh.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\sh.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\sjs.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\sjs.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\slim.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\slim.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\smarty.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\smarty.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\smithy.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\smithy.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\snippets.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\snippets.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\soy_template.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\soy_template.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\space.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\space.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\sparql.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\sparql.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\sql.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\sql.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\sqlserver.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\sqlserver.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\stylus.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\stylus.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\svg.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\svg.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\swift.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\swift.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\tcl.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\tcl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\terraform.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\terraform.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\tex.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\tex.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\text.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\text.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\textile.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\textile.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\toml.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\toml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\tsx.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\tsx.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\turtle.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\turtle.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\twig.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\twig.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\typescript.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\typescript.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\vala.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\vala.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\vbscript.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\vbscript.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\velocity.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\velocity.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\verilog.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\verilog.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\vhdl.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\vhdl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\visualforce.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\visualforce.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\wollok.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\wollok.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\xml.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\xml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\xquery.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\xquery.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\yaml.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\yaml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\snippets\zeek.js">
+    </Content>
+    <Content Update="wwwroot\ace\snippets\zeek.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-ambiance.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-ambiance.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-chaos.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-chaos.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-chrome.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-chrome.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-clouds.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-clouds.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-clouds_midnight.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-clouds_midnight.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-cobalt.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-cobalt.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-crimson_editor.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-crimson_editor.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-dawn.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-dawn.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-dracula.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-dracula.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-dreamweaver.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-dreamweaver.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-eclipse.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-eclipse.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-github.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-github.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-gob.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-gob.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-gruvbox.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-gruvbox.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-idle_fingers.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-idle_fingers.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-iplastic.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-iplastic.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-katzenmilch.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-katzenmilch.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-kr_theme.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-kr_theme.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-kuroir.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-kuroir.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-merbivore.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-merbivore.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-merbivore_soft.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-merbivore_soft.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-monokai.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-monokai.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-mono_industrial.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-mono_industrial.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-nord_dark.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-nord_dark.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-one_dark.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-one_dark.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-pastel_on_dark.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-pastel_on_dark.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-solarized_dark.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-solarized_dark.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-solarized_light.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-solarized_light.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-sqlserver.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-sqlserver.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-terminal.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-terminal.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-textmate.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-textmate.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-tomorrow.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-tomorrow.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-tomorrow_night.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-tomorrow_night.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-tomorrow_night_blue.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-tomorrow_night_blue.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-tomorrow_night_bright.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-tomorrow_night_bright.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-tomorrow_night_eighties.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-tomorrow_night_eighties.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-twilight.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-twilight.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-vibrant_ink.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-vibrant_ink.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\theme-xcode.js">
+    </Content>
+    <Content Update="wwwroot\ace\theme-xcode.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\worker-base.js">
+    </Content>
+    <Content Update="wwwroot\ace\worker-base.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\worker-coffee.js">
+    </Content>
+    <Content Update="wwwroot\ace\worker-coffee.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\worker-css.js">
+    </Content>
+    <Content Update="wwwroot\ace\worker-css.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\worker-html.js">
+    </Content>
+    <Content Update="wwwroot\ace\worker-html.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\worker-javascript.js">
+    </Content>
+    <Content Update="wwwroot\ace\worker-javascript.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\worker-json.js">
+    </Content>
+    <Content Update="wwwroot\ace\worker-json.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\worker-lua.js">
+    </Content>
+    <Content Update="wwwroot\ace\worker-lua.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\worker-php.js">
+    </Content>
+    <Content Update="wwwroot\ace\worker-php.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\worker-xml.js">
+    </Content>
+    <Content Update="wwwroot\ace\worker-xml.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\ace\worker-xquery.js">
+    </Content>
+    <Content Update="wwwroot\ace\worker-xquery.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
