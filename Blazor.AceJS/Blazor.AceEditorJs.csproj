@@ -21,4 +21,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.8" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\ace\BlazorDownloadFileScript.js" />
+  </ItemGroup>
+
+
 </Project>
