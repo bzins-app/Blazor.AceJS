@@ -4,11 +4,12 @@
 A simple nuget package to use AceEditor.js with blazor
 
 ## Usage
-1. Run `Install-Package Blazor.AceEditorJs` in the package manager console to install the latest package in your frontend project.
+1. Run `Install-Package Blazor.AceEditorJs` in the package manager console to install the latest package in your frontend project. Also available here: https://www.nuget.org/packages/Blazor.AceEditorJs
 2. Add references to necessary js in your `index.html`
     - Add `<script src="_content/Blazor.AceEditorJs/BlazorAceEditor.js"></script>` to the body
 3. Add `@using Blazor.AceEditorJs` to your page
 4. Add the component to your view and build the editor like so:
+    ->You can select your desirated language via the Type enum 'Languages'
     ```c#
     @page "/EditorDemo"
     @using Blazor.AceEditorJs   
