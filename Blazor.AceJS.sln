@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.AceEditorJs", "Blazor.AceJS\Blazor.AceEditorJs.csproj", "{9480A623-46BE-488B-95EC-F912AAA97A3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.AceEditorJs", "Blazor.AceJS\Blazor.AceEditorJs.csproj", "{9480A623-46BE-488B-95EC-F912AAA97A3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.AceEditorJsDemo", "Blazor.AceEditorJsDemo\Blazor.AceEditorJsDemo.csproj", "{2D4630C9-6465-4C36-BBFB-CDF9D3A7D21A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.AceEditorJsDemo", "Blazor.AceEditorJsDemo\Blazor.AceEditorJsDemo.csproj", "{2D4630C9-6465-4C36-BBFB-CDF9D3A7D21A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{9480A623-46BE-488B-95EC-F912AAA97A3E} = {9480A623-46BE-488B-95EC-F912AAA97A3E}
 	EndProjectSection

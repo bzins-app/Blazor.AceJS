@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Blazor.AceEditorJs
 {
-    public enum Languages
+    public enum AceLanguage
     {
         abap,
         abc,

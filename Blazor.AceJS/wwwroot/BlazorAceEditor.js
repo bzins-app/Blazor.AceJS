@@ -2,11 +2,12 @@
 window.BlazorAceEditor = function (scriptPath) {
     // check list - if already loaded we can ignore
     if (loaded[scriptPath]) {
-        console.log(scriptPath + " already loaded");
+        //console.log(scriptPath + " already loaded");
         // return 'empty' promise
         return new this.Promise(function (resolve, reject) {
             resolve();
         });
+       // return;
     }
 
     return new Promise(function (resolve, reject) {
@@ -37,3 +38,7 @@ window.BlazorAceEditor = function (scriptPath) {
 }
 // store list of what scripts we've loaded
 loaded = [];
+
+window.isScriptLoaded= function (src) {
+    return Boolean(document.querySelector('script[src="' + src + '"]'));
+}

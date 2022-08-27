@@ -1,0 +1,76 @@
+﻿@page "/MultiEditorsDemo"
+
+<PageTitle>Multi Editors Demo</PageTitle>
+
+<h3>Multi Editors Demo</h3>
+
+<div class="row">
+    <div class="col-lg">
+        <h6>SQL</h6>
+        <AceJsEditor Style="height:400px" @bind-Value="@textToEdit" Options="opt" />
+        <textarea readonly style="width:100%;height:250px;font-size:10px">@textToEdit</textarea>
+    </div>
+    <div class="col-lg">
+        <h6>C#</h6>
+        <AceJsEditor Style="height:400px" @bind-Value="@textToEdit2" Options="opt2" />
+        <textarea readonly style="width:100%;height:250px;font-size:10px">@textToEdit2</textarea>
+    </div>
+    <div class="col-lg">
+        <h6>Python</h6>
+        <AceJsEditor Style="height:400px" @bind-Value="@textToEdit3" Options="opt3" />
+        <textarea readonly style="width:100%;height:250px;font-size:10px">@textToEdit3</textarea>
+    </div>
+</div>
+
+
+
+@code {
+    string textToEdit =
+    @"SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+FULL OUTER JOIN Orders
+ON Customers.CustomerID = Orders.CustomerID
+ORDER BY Customers.CustomerName";
+    string textToEdit2 =
+        @"using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSharpTutorials
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string message = ""Hello World!!"";
+
+            Console.WriteLine(message);
+        }
+    }
+} ";
+
+    string textToEdit3 = @"#!/usr/local/bin/python
+
+import string, sys
+
+# If no arguments were given, print a helpful message
+if len(sys.argv)==1:
+    print '''Usage:
+celsius temp1 temp2 ...'''
+    sys.exit(0)
+
+# Loop over the arguments
+for i in sys.argv[1:]:
+    try:
+        fahrenheit=float(string.atoi(i))
+    except string.atoi_error:
+        print repr(i), ""not a numeric value""
+    else:
+        celsius=(fahrenheit-32)*5.0/9.0
+        print '%i\260F = %i\260C' % (int(fahrenheit), int(celsius+.5))";
+    AceEditorOptions opt = new() { IsReadOnly = false, Language = AceLanguage.sqlserver, Theme = AceTheme.sqlserver };
+    AceEditorOptions opt2 = new() { IsReadOnly = false, Language = AceLanguage.csharp, Theme = AceTheme.one_dark };
+    AceEditorOptions opt3 = new() { IsReadOnly = false, Language = AceLanguage.python, Theme = AceTheme.terminal };
+}

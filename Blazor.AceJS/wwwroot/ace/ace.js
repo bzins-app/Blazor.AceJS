@@ -3695,7 +3695,7 @@ var options = {
     workerPath: null,
     modePath: null,
     themePath: null,
-    basePath: "",
+    basePath: "_content/Blazor.AceEditorJs/ace/",
     suffix: ".js",
     $moduleUrls: {},
     loadWorkerFromBlob: true,

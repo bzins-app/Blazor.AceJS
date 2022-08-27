@@ -1,36 +1,46 @@
-﻿
-@using Microsoft.JSInterop
+﻿@using Microsoft.JSInterop
 @inherits ComponentBase
+@implements IDisposable
 @inject IJSRuntime JS
 
-<div @ref="divElement" style="@Style" @onkeyup="TriggerDotNetInstanceMethod" @onpaste="TriggerDotNetInstanceMethod">@Value</div>
-
+<div @ref="divElement" style="@Style" @onkeyup="TriggerAceInstance" @onpaste="TriggerAceInstance">@Value</div>
 
 @code {
     [Parameter]
-    public string Value { get; set; }
-
+    public string Value { get; set; } = string.Empty;
     [Parameter]
     public EventCallback<string> ValueChanged { get; set; }
-    [Parameter] public Languages language { get; set; } = Languages.text;
-    [Parameter] public bool DarkMode { get; set; } = false;
-    [Parameter] public string Style { get; set; }
+    [Parameter] public string Style { get; set; } = "height:100vh";
+    [Parameter] public AceEditorOptions? Options { get; set; }
+    private AceEditorOptions _options = new() { Language = AceLanguage.text, Theme = AceTheme.sqlserver };
     private ElementReference divElement;
     private DotNetObjectReference<AceJsEditor> objRef = default!;
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    protected override void OnParametersSet()
     {
-        if (firstRender)
+        if (Options is not null)
         {
-            await JS.InvokeVoidAsync("BlazorAceEditor", "_content/Blazor.AceEditorJs/ace/ace.js");
-            await JS.InvokeVoidAsync("BlazorAceEditor", "_content/Blazor.AceEditorJs/ace/ext-themelist.js");
-            await JS.InvokeVoidAsync("BlazorAceEditor", "_content/Blazor.AceEditorJs/ace/ext-language_tools.js");
-            await JS.InvokeVoidAsync("BlazorAceEditor", "_content/Blazor.AceEditorJs/ace/ace-custom.js");
-            await JS.InvokeVoidAsync("editorRender", divElement, language.ToString(), DarkMode == false ? "sqlserver" : "one_dark");
+            _options = Options;
         }
+        base.OnParametersSet();
     }
 
-    public async Task TriggerDotNetInstanceMethod()
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JS.InvokeVoidAsync("BlazorAceEditor", "_content/Blazor.AceEditorJs/ace/blazorAce.min.js");
+
+        bool check = false;
+        int attemps = 0;
+        while (check == false || attemps >= 10)
+        {
+            check = await JS.InvokeAsync<bool>("isScriptLoaded", "_content/Blazor.AceEditorJs/ace/blazorAce.min.js");
+            attemps++;
+            await Task.Delay(50);
+        }
+        await JS.InvokeVoidAsync("editorRender", divElement, _options.Language.ToString(), _options.Theme.ToString(), _options.IsReadOnly);
+    }
+
+    internal async Task TriggerAceInstance()
     {
         objRef = DotNetObjectReference.Create(this);
         await JS.InvokeVoidAsync("GetCode", objRef, divElement);
@@ -41,5 +51,33 @@
     {
         Value = feedback;
         await ValueChanged.InvokeAsync(Value);
+    }
+
+    internal async Task SetAceLanguageAsync(AceLanguage lang=AceLanguage.text)
+    {
+        await JS.InvokeVoidAsync("ace_set_mode", divElement, lang.ToString());
+    }
+
+    internal async Task SetAceThemAsync(AceTheme theme)
+    {
+        await JS.InvokeVoidAsync("ace_set_theme", divElement, theme.ToString());
+    }
+
+    internal async Task SetAceReadonlyAsync(bool readOnly)
+    {
+        await JS.InvokeVoidAsync("ace_set_readonly", divElement, readOnly);
+    }
+
+    public async Task SetAceEditorParameters(AceEditorOptions opt)
+    {
+        Options = opt;
+        await SetAceLanguageAsync(Options.Language);
+        await SetAceReadonlyAsync(Options.IsReadOnly);
+        await SetAceThemAsync(Options.Theme);
+    }
+
+    public void Dispose()
+    {
+        objRef?.Dispose();
     }
 }
