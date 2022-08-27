@@ -32,7 +32,7 @@ A simple nuget package to use AceEditor.js with blazor
 
 -> you can update the options with the method 'AceJsEditor.SetAceEditorParameters(AceEditorOptions)' . Don't hesitate to see the demo project to see interactions.
 
-    ```c#
+   ```c#
     @page "/EditorDemo"
     @using Blazor.AceEditorJs   
 
@@ -52,5 +52,5 @@ A simple nuget package to use AceEditor.js with blazor
         await reference.SetAceEditorParameters(opt);
     }
     }
-
-    ```
+   ```
+   
