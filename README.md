@@ -9,19 +9,53 @@ A simple nuget package to use AceEditor.js with blazor
     - Add `<script src="_content/Blazor.AceEditorJs/BlazorAceEditor.js"></script>` to the body
 3. Add `@using Blazor.AceEditorJs` to your page
 4. Add the component to your view and build the editor like so:
-    ->You can select your desirated language via the Type enum 'Languages'
+    ->select edotir ith the class 'AceEditorOptions' to select the theme, the language and the property 'ReadOnly'.
     ```c#
     @page "/EditorDemo"
     @using Blazor.AceEditorJs   
 
     <PageTitle>EditorDemo</PageTitle>
-    <AceJsEditor language="Languages.sql" Style="height:300px" @bind-Value ="@textToEdit" DarkMode="true"></AceJsEditor>
+    <AceJsEditor  Style="height:300px" @bind-Value ="@textToEdit" Options="opt"></AceJsEditor>
     <p>@textToEdit</p>
 
     @code {
         string textToEdit = "Select * from Test";
+        AceEditorOptions opt = new() { IsReadOnly = false, Language = AceLanguage.sqlserver, Theme = AceTheme.sqlserver };
     }
 
     ```
+    The list of themes and languages for enum 'AceLanguage' and 'AceTheme' can be retrieved in the demo project but also here:https://ace.c9.io/tool/mode_creator.html
+    
 5. test
 ![image](https://user-images.githubusercontent.com/46160493/186119032-dde36180-579a-4f68-a553-f04533c8ecba.png)
+
+
+-> you can update the Ace options in using the method 'AceJsEditor.SetAceEditorParameters(AceEditorOptions)' . Don't hesitate to see the demo project to see interactions.
+
+   ```c#
+    @page "/EditorDemo"
+    @using Blazor.AceEditorJs   
+
+    <PageTitle>EditorDemo</PageTitle>
+    <AceJsEditor @ref="reference" Style="height:300px" @bind-Value ="@textToEdit" Options="opt"></AceJsEditor>
+    <p>@textToEdit</p>
+
+    @code {
+        string textToEdit = "Select * from Test";
+        AceJsEditor? reference;
+        AceEditorOptions opt = new() { IsReadOnly = false, Language = AceLanguage.sqlserver, Theme = AceTheme.sqlserver };
+        
+            private async Task ChangeTheme(ChangeEventArgs e)
+    {
+        string theme = e.Value.ToString();
+        opt.Theme = (AceTheme)Enum.Parse(typeof(AceTheme), theme);
+        await reference.SetAceEditorParameters(opt);
+    }
+    }
+   ```
+   
+   Multi editors can also be rendered on the same page with differents configurations.
+   
+![image](https://user-images.githubusercontent.com/46160493/187048810-d0474300-73be-412f-88ae-04bb7fab1da6.png)
+
+
