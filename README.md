@@ -24,7 +24,6 @@ A simple nuget package to use AceEditor.js with blazor
     }
 
     ```
-    The list of themes and languages for enum 'AceLanguage' and 'AceTheme' can be retrieved in the demo project but also here:https://ace.c9.io/tool/mode_creator.html
     
 5. test
 ![image](https://user-images.githubusercontent.com/46160493/186119032-dde36180-579a-4f68-a553-f04533c8ecba.png)
@@ -54,8 +53,10 @@ A simple nuget package to use AceEditor.js with blazor
     }
    ```
    
-   Multi editors can also be rendered on the same page with differents configurations.
+   Multi editor instances can be also rendered on the same page with differents configurations.
    
 ![image](https://user-images.githubusercontent.com/46160493/187048810-d0474300-73be-412f-88ae-04bb7fab1da6.png)
 
+    The list of themes and languages for enum 'AceLanguage' and 'AceTheme' can be retrieved in the demo project but also here:https://ace.c9.io/tool/mode_creator.html
 
+![image](https://user-images.githubusercontent.com/46160493/187050691-8b3e765c-19c0-4ec5-8b4f-c79425b4bd7b.png)
