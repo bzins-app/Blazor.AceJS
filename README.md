@@ -30,7 +30,7 @@ A simple nuget package to use AceEditor.js with blazor
 ![image](https://user-images.githubusercontent.com/46160493/186119032-dde36180-579a-4f68-a553-f04533c8ecba.png)
 
 
--> you can update the options with the method 'AceJsEditor.SetAceEditorParameters(AceEditorOptions)' . Don't hesitate to see the demo project to see interactions.
+-> you can update the Ace options in using the method 'AceJsEditor.SetAceEditorParameters(AceEditorOptions)' . Don't hesitate to see the demo project to see interactions.
 
    ```c#
     @page "/EditorDemo"
@@ -54,3 +54,6 @@ A simple nuget package to use AceEditor.js with blazor
     }
    ```
    
+   Multi editors can also be rendered on the same page.
+   ![image](https://user-images.githubusercontent.com/46160493/187048764-2eda5cbf-6e3b-44f8-9043-47adda38550f.png)
+
