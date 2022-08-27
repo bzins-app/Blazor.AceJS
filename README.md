@@ -54,6 +54,8 @@ A simple nuget package to use AceEditor.js with blazor
     }
    ```
    
-   Multi editors can also be rendered on the same page.
-   ![image](https://user-images.githubusercontent.com/46160493/187048764-2eda5cbf-6e3b-44f8-9043-47adda38550f.png)
+   Multi editors can also be rendered on the same page with differents configurations.
+   
+![image](https://user-images.githubusercontent.com/46160493/187048810-d0474300-73be-412f-88ae-04bb7fab1da6.png)
+
 
