@@ -44,12 +44,12 @@ A simple nuget package to use AceEditor.js with blazor
         AceJsEditor? reference;
         AceEditorOptions opt = new() { IsReadOnly = false, Language = AceLanguage.sqlserver, Theme = AceTheme.sqlserver };
         
-            private async Task ChangeTheme(ChangeEventArgs e)
-    {
-        string theme = e.Value.ToString();
-        opt.Theme = (AceTheme)Enum.Parse(typeof(AceTheme), theme);
-        await reference.SetAceEditorParameters(opt);
-    }
+        private async Task ChangeTheme(ChangeEventArgs e)
+        {
+            string theme = e.Value.ToString();
+            opt.Theme = (AceTheme)Enum.Parse(typeof(AceTheme), theme);
+            await reference.SetAceEditorParameters(opt);
+        }
     }
    ```
    
