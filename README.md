@@ -57,6 +57,7 @@ A simple nuget package to use AceEditor.js with blazor
    
 ![image](https://user-images.githubusercontent.com/46160493/187048810-d0474300-73be-412f-88ae-04bb7fab1da6.png)
 
-    The list of themes and languages for enum 'AceLanguage' and 'AceTheme' can be retrieved in the demo project but also here:https://ace.c9.io/tool/mode_creator.html
+
+The list of themes and languages for enum 'AceLanguage' and 'AceTheme' can be retrieved in the demo project but also here:https://ace.c9.io/tool/mode_creator.html
 
 ![image](https://user-images.githubusercontent.com/46160493/187050691-8b3e765c-19c0-4ec5-8b4f-c79425b4bd7b.png)
