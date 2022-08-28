@@ -2,7 +2,7 @@
 
 ## Overview
 A simple nuget package to use AceEditor.js with blazor. 
-Base project: https://ace.c9.io/
+Base project:https://github.com/ajaxorg/ace
 
 ## Usage
 1. Run `Install-Package Blazor.AceEditorJs` in the package manager console to install the latest package in your frontend project. Also available here: https://www.nuget.org/packages/Blazor.AceEditorJs
