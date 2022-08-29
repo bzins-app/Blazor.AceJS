@@ -10,7 +10,7 @@ Base project:https://github.com/ajaxorg/ace
     - Add `<script src="_content/Blazor.AceEditorJs/BlazorAceEditor.js"></script>` to the body
 3. Add `@using Blazor.AceEditorJs` to your page
 4. Add the component to your view and build the editor like so:
-    ->select edotir ith the class 'AceEditorOptions' to select the theme, the language and the property 'ReadOnly'.
+    ->Use the class 'AceEditorOptions' to select the theme, the language and the property 'ReadOnly'.
     ```c#
     @page "/EditorDemo"
     @using Blazor.AceEditorJs   
