@@ -7,7 +7,7 @@ Base project:https://github.com/ajaxorg/ace
 ## Usage
 1. Run `Install-Package Blazor.AceEditorJs` in the package manager console to install the latest package in your frontend project. Also available here: https://www.nuget.org/packages/Blazor.AceEditorJs
 2. Add references to necessary js in your `index.html`
-    - Add `<script src="_content/Blazor.AceEditorJs/BlazorAceEditor.js"></script>` to the body
+    - Add  '<script src="_content/Blazor.AceEditorJs/BlazorAceEditor.min.js"></script>` to the body
 3. Add `@using Blazor.AceEditorJs` to your page
 4. Add the component to your view and build the editor like so:
     ->Use the class 'AceEditorOptions' to select the theme, the language and the property 'ReadOnly'.
