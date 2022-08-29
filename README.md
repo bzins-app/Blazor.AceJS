@@ -54,7 +54,7 @@ Base project:https://github.com/ajaxorg/ace
     }
    ```
    
-   Multi editor instances can be also rendered on the same page with differents configurations.
+   Multi editor instances can be also rendered on the same page with different configurations.
    
 ![image](https://user-images.githubusercontent.com/46160493/187048810-d0474300-73be-412f-88ae-04bb7fab1da6.png)
 
