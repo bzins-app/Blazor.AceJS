@@ -27,7 +27,7 @@
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        await JS.InvokeVoidAsync("BlazorAceEditor", "_content/Blazor.AceEditorJs/ace/blazorAce.min.js");
+      /*  await JS.InvokeVoidAsync("BlazorAceEditor", "_content/Blazor.AceEditorJs/ace/blazorAce.min.js");
 
         bool check = false;
         int attemps = 0;
@@ -36,7 +36,7 @@
             check = await JS.InvokeAsync<bool>("isScriptLoaded", "_content/Blazor.AceEditorJs/ace/blazorAce.min.js");
             attemps++;
             await Task.Delay(50);
-        }
+        }*/
         await JS.InvokeVoidAsync("editorRender", divElement, _options.Language.ToString(), _options.Theme.ToString(), _options.IsReadOnly);
     }
 

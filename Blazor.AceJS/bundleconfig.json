@@ -1,6 +1,6 @@
 ﻿[
   {
-    "outputFileName": "wwwroot/ace/blazorAce.min.js",
+    "outputFileName": "wwwroot/BlazorAceEditor.min.js",
     "inputFiles": [
       "wwwroot/ace/ace.js",
       "wwwroot/ace/ext-themelist.js",
