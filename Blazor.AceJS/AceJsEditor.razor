@@ -3,7 +3,7 @@
 @implements IDisposable
 @inject IJSRuntime JS
 
-<div @ref="divElement" style="@Style" @onkeyup="TriggerAceInstance" @onpaste="TriggerAceInstance">@Value</div>
+<div @ref="divElement" style="@Style" @onkeyup="TriggerAceInstance" @onpaste="TriggerAceInstance" @onkeydown="TriggerAceInstance" @onclick="TriggerAceInstance">@Value</div>
 
 @code {
     [Parameter]
