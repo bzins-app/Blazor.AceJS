@@ -37,11 +37,12 @@ Base project:https://github.com/ajaxorg/ace
     @using Blazor.AceEditorJs   
 
     <PageTitle>EditorDemo</PageTitle>
-    <AceJsEditor @ref="reference" Style="height:300px" @bind-Value ="@textToEdit" Options="opt"></AceJsEditor>
+    <AceJsEditor @ref="reference" Style="height:300px" @bind-Value="@textToEdit" @bind-SelectedValue="@selectedText" Options="opt"></AceJsEditor>
     <p>@textToEdit</p>
 
     @code {
         string textToEdit = "Select * from Test";
+        string selectedText = string.Empty;
         AceJsEditor? reference;
         AceEditorOptions opt = new() { IsReadOnly = false, Language = AceLanguage.sqlserver, Theme = AceTheme.sqlserver };
         
