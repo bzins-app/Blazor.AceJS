@@ -231,10 +231,14 @@
     </optgroup>
 </select>
 
-<AceJsEditor @ref="reference" Style="height:60vh" @bind-Value="@textToEdit" Options="opt" />
+<AceJsEditor @ref="reference" Style="height:60vh" @bind-Value="@textToEdit" @bind-SelectedValue="textSelected" Options="opt" />
+
+<div>selected text</div>
+<div>@textSelected</div>
 
 @code {
     string textToEdit;
+    string textSelected;
     AceJsEditor? reference;
     private bool IsChecked = false;
     AceLanguage lang =AceLanguage.javascript;

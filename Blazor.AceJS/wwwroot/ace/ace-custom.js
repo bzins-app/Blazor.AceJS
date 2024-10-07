@@ -7,15 +7,12 @@ window.editorRender = function (element, mode, theme, readOnly){
 
     editor.setTheme("ace/theme/" + theme);
     editor.setReadOnly(readOnly);
-    // inline must be true to syntax highlight PHP without opening <?php tag
+
     editor.session.setMode(defineMode);
     editor.renderer.setScrollMargin(10, 10);
-    editor.setOptions({
-        // "scrollPastEnd": 0.8,
-        autoScrollEditorIntoView: true
-    });
     // enable autocompletion and snippets
     editor.setOptions({
+        autoScrollEditorIntoView: true,
         enableBasicAutocompletion: true,
         enableSnippets: true,
         enableLiveAutocompletion: true
@@ -51,3 +48,9 @@ window.GetCode = (dotNetHelper, element) => {
     dotNetHelper.invokeMethodAsync( 'ReceiveCode', code)
 };
 
+
+window.GetSelectedCode = (dotNetHelper, element) => {
+    var editor = ace.edit(element);
+    var code = editor.getSelectedText();
+    dotNetHelper.invokeMethodAsync('ReceiveSelectedCode', code)
+};
