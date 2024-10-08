@@ -22,10 +22,8 @@
 
     protected override void OnParametersSet()
     {
-        if (Options is not null)
-        {
-            _options = Options;
-        }
+        // Use null-conditional operator to simplify the assignment
+        _options = Options ?? _options;
         base.OnParametersSet();
     }
 
@@ -80,8 +78,24 @@
         await SetAceThemeAsync(Options.Theme);
     }
 
+    // Implementing the full dispose pattern
+    private bool _disposed = false;
+
+    protected virtual void Dispose(bool disposing)
+    {
+        if (!_disposed)
+        {
+            if (disposing)
+            {
+                objRef?.Dispose();
+            }
+            _disposed = true;
+        }
+    }
+
     public void Dispose()
     {
-        objRef?.Dispose();
+        Dispose(true);
+        GC.SuppressFinalize(this);
     }
 }
