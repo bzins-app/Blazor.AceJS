@@ -52,14 +52,10 @@
         var editor = getEditor(element);
         var code = editor.getSession().getValue();
         dotNetHelper.invokeMethodAsync('ReceiveCode', code);
-    };
-
-    window.GetSelectedCode = (dotNetHelper, element) => {
-        var editor = getEditor(element);
-        var code = editor.getSelectedText();
-        if (code !== previousCode) {
-            previousCode = code;
-            dotNetHelper.invokeMethodAsync('ReceiveSelectedCode', code);
+        var selectedCode = editor.getSelectedText();
+        if (selectedCode !== previousCode) {
+            previousCode = selectedCode;
+            dotNetHelper.invokeMethodAsync('ReceiveSelectedCode', selectedCode);
         }
     };
 })();

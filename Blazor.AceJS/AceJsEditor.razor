@@ -41,7 +41,6 @@
     {
         objRef ??= DotNetObjectReference.Create(this);
         await JS.InvokeVoidAsync("GetCode", objRef, divElement);
-        await JS.InvokeVoidAsync("GetSelectedCode", objRef, divElement);
     }
 
     [JSInvokable]
