@@ -48,14 +48,14 @@
         editor.setReadOnly(readOnly);
     };
 
-    window.GetCode = (dotNetHelper, element) => {
+    window.GetCode = async (dotNetHelper, element) => {
         var editor = getEditor(element);
         var code = editor.getSession().getValue();
-        dotNetHelper.invokeMethodAsync('ReceiveCode', code);
+        await dotNetHelper.invokeMethodAsync('ReceiveCode', code);
         var selectedCode = editor.getSelectedText();
         if (selectedCode !== previousCode) {
             previousCode = selectedCode;
-            dotNetHelper.invokeMethodAsync('ReceiveSelectedCode', selectedCode);
+            await dotNetHelper.invokeMethodAsync('ReceiveSelectedCode', selectedCode);
         }
     };
 })();
