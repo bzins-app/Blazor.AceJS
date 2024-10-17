@@ -1,17 +1,21 @@
 (function () {
     let previousCode = null;
+    const editorCache = new Map();
 
     function getEditor(element) {
-        return ace.edit(element);
+        if (!editorCache.has(element)) {
+            editorCache.set(element, ace.edit(element));
+        }
+        return editorCache.get(element);
     }
 
     function setEditorMode(editor, mode) {
-        var defineMode = "ace/mode/" + mode;
+        const defineMode = "ace/mode/" + mode;
         editor.session.setMode(defineMode);
     }
 
     window.editorRender = function (element, mode, theme, readOnly) {
-        var editor = getEditor(element);
+        const editor = getEditor(element);
 
         editor.setTheme("ace/theme/" + theme);
         editor.setReadOnly(readOnly);
@@ -28,34 +32,43 @@
     };
 
     window.ace_set_theme = function (element, theme) {
-        var editor = getEditor(element);
+        const editor = getEditor(element);
         editor.setTheme("ace/theme/" + theme);
     };
 
     window.ace_set_mode = function (element, mode) {
-        var editor = getEditor(element);
+        const editor = getEditor(element);
         setEditorMode(editor, mode);
     };
 
     window.ace_destroy = function (element) {
-        var editor = getEditor(element);
+        const editor = getEditor(element);
         editor.destroy();
         editor.container.remove();
+        editorCache.delete(element);
     };
 
     window.ace_set_readonly = function (element, readOnly) {
-        var editor = getEditor(element);
+        const editor = getEditor(element);
         editor.setReadOnly(readOnly);
     };
 
-    window.GetCode = async (dotNetHelper, element) => {
-        var editor = getEditor(element);
-        var code = editor.getSession().getValue();
+    const debounce = (func, wait) => {
+        let timeout;
+        return function (...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    };
+
+    window.GetCode = debounce(async (dotNetHelper, element) => {
+        const editor = getEditor(element);
+        const code = editor.getSession().getValue();
         await dotNetHelper.invokeMethodAsync('ReceiveCode', code);
-        var selectedCode = editor.getSelectedText();
+        const selectedCode = editor.getSelectedText();
         if (selectedCode !== previousCode) {
             previousCode = selectedCode;
             await dotNetHelper.invokeMethodAsync('ReceiveSelectedCode', selectedCode);
         }
-    };
+    }, 50);
 })();
