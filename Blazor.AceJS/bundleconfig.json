@@ -3,8 +3,6 @@
     "outputFileName": "wwwroot/BlazorAceEditor.min.js",
     "inputFiles": [
       "wwwroot/ace/ace.js",
-      "wwwroot/ace/ext-themelist.js",
-      "wwwroot/ace/ext-language_tools.js",
       "wwwroot/ace/ace-custom.js"
     ],
     "minify": {

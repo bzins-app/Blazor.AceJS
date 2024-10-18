@@ -7,7 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>AceEditorJs</Title>
-    <Version>1.1.10</Version>
+    <Version>1.1.11</Version>
     <PackageProjectUrl>https://github.com/bennnos/Blazor.AceJS</PackageProjectUrl>
     <RepositoryUrl>https://github.com/bennnos/Blazor.AceJS</RepositoryUrl>
     <IsPublishable>True</IsPublishable>
