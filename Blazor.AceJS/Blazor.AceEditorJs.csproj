@@ -1,28 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
-
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>AceEditorJs</Title>
-    <Version>1.1.13</Version>
+    <Version>1.2.0</Version>
     <PackageProjectUrl>https://github.com/bennnos/Blazor.AceJS</PackageProjectUrl>
     <RepositoryUrl>https://github.com/bennnos/Blazor.AceJS</RepositoryUrl>
     <IsPublishable>True</IsPublishable>
-   <UseBlazorWebAssembly>true</UseBlazorWebAssembly>
+    <UseBlazorWebAssembly>true</UseBlazorWebAssembly>
   </PropertyGroup>
-
-
   <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
-    <PackageReference Include="Microsoft.AspNetCore.Components" Version="6.0.36" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.36" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="8.0.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.12" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="wwwroot\ace\ace-custom.js">
@@ -566,6 +562,4 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-
-
 </Project>
