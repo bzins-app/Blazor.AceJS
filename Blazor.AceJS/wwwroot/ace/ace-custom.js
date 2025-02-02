@@ -3,10 +3,10 @@
     const editorCache = new Map();
 
     function getEditor(element) {
-       /* if (!editorCache.has(element)) {
+        if (!editorCache.has(element)) {
             editorCache.set(element, ace.edit(element));
-        }*/
-        return ace.edit(element);
+        }
+        return editorCache.get(element);
     }
 
     function setEditorMode(editor, mode) {
